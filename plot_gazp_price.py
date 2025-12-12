@@ -17,7 +17,7 @@ print(f'Период данных: с {df["TRADEDATE"].iloc[0].strftime("%Y-%m-%
 
 # Создаем график
 plt.figure(figsize=(12, 6))
-plt.plot(df['TRADEDATE'], df['CLOSE'], linewidth=1.5, color='blue', marker='o', markersize=1)
+plt.plot(df['TRADEDATE'], df['CLOSE'], linewidth=1, color='blue', marker='o', markersize=1)
 plt.title('Динамика цены акций Газпрома (GAZP)', fontsize=16)
 plt.xlabel('Дата', fontsize=12)
 plt.ylabel('Цена закрытия (руб.)', fontsize=12)
